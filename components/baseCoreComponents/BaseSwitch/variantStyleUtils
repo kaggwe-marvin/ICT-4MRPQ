@@ -1,0 +1,48 @@
+import {
+  compactSwitchStyles,
+  customThumbSwitchStyles,
+  customTrackSwitchStyles,
+  disabledSwitchStyles,
+  errorSwitchStyles,
+  labeledSwitchStyles,
+  largeSwitchStyles,
+  primarySwitchStyles,
+  roundedSwitchStyles,
+  secondarySwitchStyles,
+  smallSwitchStyles,
+  successSwitchStyles,
+  toggleSwitchStyles,
+} from "./BaseSwitchStyles";
+
+export const applyVariantStyle = (baseStyle, variant) => {
+  switch (variant) {
+    case "rounded":
+      return [baseStyle, roundedSwitchStyles.variantSwitch];
+    case "compact":
+      return [baseStyle, compactSwitchStyles.variantSwitch];
+    case "labeled":
+      return [baseStyle, labeledSwitchStyles.variantSwitch];
+    case "small":
+      return [baseStyle, smallSwitchStyles.variantSwitch];
+    case "disabled":
+      return [baseStyle, disabledSwitchStyles.variantSwitch];
+    case "customTrack":
+      return [baseStyle, customTrackSwitchStyles.variantSwitch];
+    case "customThumb":
+      return [baseStyle, customThumbSwitchStyles.variantSwitch];
+    case "primary":
+      return [baseStyle, primarySwitchStyles.variantSwitch];
+    case "secondary":
+      return [baseStyle, secondarySwitchStyles.variantSwitch];
+    case "large":
+      return [baseStyle, largeSwitchStyles.variantSwitch];
+    case "toggle":
+      return [baseStyle, toggleSwitchStyles.variantSwitch];
+    case "error":
+      return [baseStyle, errorSwitchStyles.variantSwitch];
+    case "success":
+      return [baseStyle, successSwitchStyles.variantSwitch];
+    default:
+      return baseStyle;
+  }
+};
