@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ICT-4MRPQ",
-    "slug": "ICT-4MRPQ",
+    "slug": "ict-4mrpq",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b413043c-f5cb-4f72-a6f6-84f1a1b4fc21"
+      }
+    },
+    "owner": "kaggwe_marvin"
   }
 }
